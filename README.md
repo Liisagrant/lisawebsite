@@ -1,6 +1,6 @@
 # lisawebsite
 
-vanilla HTML websitee about me
+vanilla HTML website about me
 
 ## heading 2
 
