@@ -4,3 +4,8 @@ body {
 .page-header {
   background-color: whitesmoke;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
