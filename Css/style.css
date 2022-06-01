@@ -89,3 +89,15 @@ footer {
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+}
+
+.tiangel-box {
+  width: 100%;
+  display: inline-block;
+  border-top: 1200px solid var(--main--light--peach);
+  border-right: 1200px solid var(--main--light--blue);
+}
