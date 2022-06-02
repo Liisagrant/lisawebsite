@@ -33,6 +33,8 @@ h2 {
 p,
 a,
 button,
+h3,
+h4,
 li {
   font-family: "Lato", sans-serif;
 }
@@ -93,7 +95,7 @@ button {
   border: 2px solid var(--main--hot--pink);
   box-sizing: border-box;
   text-decoration: none;
-  color: #444444;
+  color: #fff;
   text-align: center;
   transition: all 0.2s;
   box-shadow: 0 10px 27px #0000004d;
@@ -123,7 +125,8 @@ footer {
   align-items: flex-end;
 }
 
-section {
+.landing-page,
+.about-page {
   margin-bottom: 100px;
 }
 
@@ -194,50 +197,75 @@ section {
   margin-right: 30px;
 }
 
-.about-page-img-box {
+.card {
+  width: 300px;
+  height: 320px;
   position: relative;
+  background-color: transparent;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  margin: 20px auto;
 }
 
-.img1,
-.img2,
-.img3 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px;
+.card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
 }
 
-.img1 {
-  background-image: url("/img/oslo1.jpg");
-  background-position: 90% 10%;
+.work-page {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.img2 {
-  background-image: url("/img/ice-cream.jpg");
-}
-
-.img3 {
-  background-image: url("/img/oslo2.jpg");
-}
-
-.slide-show-img {
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  padding-top: 2px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 200px;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 12 ease-in-out;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  display: table-row;
+  justify-content: center;
+  text-align: center;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--main--light--peach);
+  animation: 4s infinite card-animation;
+}
+
+.work-page img {
+  width: 280px;
+  object-fit: contain;
+  margin: 30px auto;
+}
+
+@keyframes card-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #fff;
 }
 
 @media screen and (min-width: 400px) {
   .greeting-img {
     height: 70%;
     width: 350;
-  }
-  .slide-show-img {
-    height: 300px;
   }
 }
 
@@ -256,8 +284,5 @@ section {
   }
   .tiangel-box h2 {
     font-size: 40px;
-  }
-  .slide-show-img {
-    height: 400px;
   }
 }
