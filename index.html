@@ -7,7 +7,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&family=Poppins:ital,wght@0,500;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Lisa`s website</title>
+    <script src="/js/main.js" defer></script>
+    <title>Lisa Grant</title>
 </head>
 <body>
     <header>
@@ -16,21 +17,59 @@
                 <img src="/img/logo-me.svg" alt="Logo"/>
             </a>
             <ul class="nav-links">
-                <li>About</li>
-                <li>Contact</li>
-                <li>My work</li>
-                <li>My Blog</li>
+                <li><a href="#section-1">About</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="landing-page">
-            <div class="tiangel-box"></div>
+            <div class="tiangel-box">
+                <div class="greeting-img"></div>
+                <div class="tiangle-greeting-text">
+                <h1>GOOD DAY!</h1>
+                <h2>I am <span>Lisa</span></h2>
+                </div>
+                <div class="triangle"></div>
+            </div>
         </section>
-        <section class="about-page"></section>
-        <section class="contact-page"></section>
+        <section class="about-page container" id="section-1">
+            <div class="about-page-text">
+                <h2>Aboute me.</h2>
+                     <p class="width-on-text">I am a 32 years old woman from Norway, Oslo. In 2014 I graduated as a preschool teacher. 
+                    After a couple of years of teaching children, I wanted to learn and do something new. 
+                    I found the courage and went back to school, but now as a frontend developer student.
+                    <br>
+                    <br>
+                    I enjoy walking in the woods, running, and spending time with family.  For fun, I love watching films,
+                    singing(not very well), and listening to podcasts. A word that describes me is probably curious. I love to 
+                    learn new things and talk to people. </p>
+
+                        <button>read my post</button>
+            </div>
+                <!-- <div class="about-page-img-box">
+                    <div
+                        class="slide-show-img img1"
+                        role="img"
+                        aria-label="">
+                    </div>
+                    <div
+                        class="slide-show-img img2"
+                        role="img"
+                        aria-label="">
+                    </div>
+                    <div
+                        class="slide-show-img img3"
+                        role="img"
+                        aria-label="">
+                    </div>
+                </div> -->
+        </section>
+        <section class="contact-page">
+
+        </section>
         <section clas="my-work-page"></section>
-        <section class="my-blog-Page"></section>
     </main>
     <footer class="container">
         <p>lisagrant2022.</p>
