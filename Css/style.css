@@ -92,7 +92,7 @@ li {
 
 button {
   padding: 8px 16px;
-  border: 2px solid var(--main--hot--pink);
+  border: 2px solid var(--main--dark--blue);
   box-sizing: border-box;
   text-decoration: none;
   color: #fff;
@@ -101,13 +101,13 @@ button {
   box-shadow: 0 10px 27px #0000004d;
   font-size: 16px;
   border-radius: 5px;
-  background-color: var(--main--hot--pink);
+  background-color: var(--main--dark--blue);
   margin: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  color: var(--main--hot--pink);
+  color: var(--main--dark--blue);
   background-color: var(--background-colour);
 }
 
@@ -187,7 +187,8 @@ footer {
   flex-direction: column;
 }
 
-.about-page h2 {
+.about-page h2,
+.work-page h2 {
   font-size: 40px;
   padding: 16px;
 }
@@ -197,69 +198,33 @@ footer {
   margin-right: 30px;
 }
 
+.card-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   width: 300px;
-  height: 320px;
-  position: relative;
-  background-color: transparent;
-  transition: 0.8s;
-  transform-style: preserve-3d;
-  margin: 20px auto;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-  cursor: pointer;
-}
-
-.work-page {
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
-}
-
-.front,
-.back {
-  height: 100%;
-  width: 100%;
-  padding-top: 2px;
-  position: absolute;
-  border-radius: 20px;
-  backface-visibility: hidden;
-  display: table-row;
-  justify-content: center;
-  text-align: center;
-}
-
-.front {
-  display: flex;
+  overflow: hidden;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background: var(--main--light--peach);
-  animation: 4s infinite card-animation;
+  position: relative;
 }
 
-.work-page img {
-  width: 280px;
-  object-fit: contain;
-  margin: 30px auto;
+.header-card:hover {
+  margin-top: -20px;
 }
 
-@keyframes card-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
+.body-card:hover {
+  height: 50%;
 }
 
-.back {
-  transform: rotateY(180deg);
-  background-color: #fff;
+.card img:hover {
+  transform: translateY(-10px) translateX(-5px) scale(1.05);
 }
 
 @media screen and (min-width: 400px) {
