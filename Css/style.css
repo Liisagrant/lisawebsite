@@ -22,7 +22,7 @@
 h1 {
   font-size: 40px;
   font-family: "Poppins", sans-serif;
-  font-weight: Black 900 Italic;
+  font-weight: 900;
 }
 
 h2 {
@@ -149,7 +149,7 @@ footer {
   justify-content: center;
 }
 
-.tiangel-box {
+.triangle-box {
   position: relative;
   display: flex;
   justify-content: center;
@@ -171,10 +171,10 @@ footer {
 }
 
 .triangle:hover {
-  animation: shakeit 0.5s infinite;
+  animation: shake-it 0.5s infinite;
 }
 
-@keyframes shakeit {
+@keyframes shake-it {
   0% {
     transform: translate(1px, 1px) rotate(0deg);
   }
@@ -221,18 +221,18 @@ footer {
   border: 2px solid var(--main--dark--blue);
 }
 
-.tiangel-box h1,
-.tiangel-box h2 {
+.triangle-box h1,
+.triangle-box h2 {
   z-index: 10;
   text-align: center;
 }
 
-.tiangle-greeting-text {
+.triangle-greeting-text {
   display: flex;
   flex-direction: column;
 }
 
-.tiangle-greeting-text span {
+.triangle-greeting-text span {
   color: var(--main--hot--pink);
   font-size: 35px;
 }
@@ -281,7 +281,7 @@ footer {
 }
 
 .card img:hover {
-  transform: translateY(-10px) translateX(-5px) scale (1.05);
+  transform: translateY(-10px) translateX(-5px) scale(1.05);
 }
 
 .card img {
@@ -300,7 +300,6 @@ footer {
   flex-direction: column;
   -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-  -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   cursor: pointer;
@@ -333,7 +332,6 @@ footer {
   top: 0;
   -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-  -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
 }
@@ -408,7 +406,7 @@ footer {
 
   .greeting-img {
     height: 70%;
-    width: 350;
+    width: 350px;
   }
 }
 
@@ -422,10 +420,10 @@ footer {
     border-bottom: 450px solid var(--main--light--peach);
   }
 
-  .tiangel-box h1 {
+  .triangle-box h1 {
     font-size: 100px;
   }
-  .tiangel-box h2 {
+  .triangle-box h2 {
     font-size: 40px;
   }
 }
