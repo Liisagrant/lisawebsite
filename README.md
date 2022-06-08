@@ -1,6 +1,4 @@
 # lisawebsite
-# Project Exam 
-
 ![this is an image](https://lisagrant.me//image/lisagrant.png)
 
 
