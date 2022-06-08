@@ -1,15 +1,16 @@
 # lisawebsite
+![this is an image](https://lisagrant.me//img/lisagrant.png)
 
-vanilla HTML website about me
 
-## heading 2
+## Description
+My portfolio
+## Built With
 
-### heading 3
+- HTML5
+- CSS
 
-#### heading 4
+## To Do
+-Make blog page and add some cool effects 
 
-##### heading 5
-
-```bash
-const MyName="Lisa";
-```
+## Contact
+[My LinkedIn page](https://www.linkedin.com/in/lisa-grant-61249221a/)
