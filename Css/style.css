@@ -50,11 +50,14 @@ li {
   color: var(--main--letter--colour);
 }
 
-p,
 a,
 li {
   font-size: 16px;
   padding: 4px;
+}
+
+p {
+  padding: 16px;
 }
 
 a {
@@ -317,7 +320,7 @@ footer {
 }
 
 .card-content p {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: normal;
   padding: 8px;
 }
@@ -349,7 +352,7 @@ footer {
 .card-Link-page {
   display: flex;
   text-transform: uppercase;
-  opacity: 0.5;
+  opacity: 0.8;
   letter-spacing: 1px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
@@ -379,12 +382,22 @@ footer {
   margin: 0 auto;
 }
 
+.contact-page-text p {
+  padding: 4px;
+}
+
 .under-construction {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 100px 10px;
+}
+
+.good-day {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 400px) {
