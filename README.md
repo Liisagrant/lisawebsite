@@ -1,5 +1,4 @@
 # lisawebsite
-![this is an image](https://lisagrant.me//img/lisagrant.png)
 
 
 ## Description
